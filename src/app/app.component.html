@@ -1,0 +1,24 @@
+<div class="common">
+  <div class="container">
+  <ol>
+    <p class="font-italic">
+      <!-- <li   value={{user?.id}} *ngFor="let user of users"> -->
+      <li [ngClass]="{yellowClass: user.team==='yellow', blueClass: user.team==='blue', redClass: user.team==='red'}" *ngFor="let user of users">
+
+        <!-- <p [ngClass]="{yellowClass: user.team==='yellow', blueClass: user.team==='blue', redClass: user.team==='red'}">  -->
+          {{user?.name}} , {{user?.lastname}}
+        <!-- </p> -->
+
+        <p *ngIf="user.id % 2 != 0">
+     
+
+        </p>
+
+        <div [innerHTML]="demo"></div>
+
+    </li>
+
+  </p>
+  </ol>
+</div>
+</div>

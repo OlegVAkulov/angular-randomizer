@@ -1,0 +1,53 @@
+ol{
+    counter-reset: myCounter;
+  }
+  
+  li{
+    list-style: none;
+    width: 30%;
+  }
+  
+  li:before {
+    counter-increment: myCounter;
+    content:counter(myCounter);
+    /* content: attr(value); */
+    color: black;
+    background: #CDCDC0;
+    /* background: attr(data-color, red); */
+    display: inline-block;
+    text-align: center;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-weight: 900;
+    margin: 5px 10px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  p{
+    font-variant: small-caps;
+    font-weight: 600;
+    font-stretch: semi-expanded;
+    font-size: medium;
+  }
+
+  .blueClass {
+     /* background-color: #375E97  */
+     background-color: #78A5A3 
+    }
+
+  .redClass {
+     /* background-color: #FB6542  */
+     background-color: #CE5A57 
+    }
+
+  .yellowClass {
+     /* background-color: #FFBB00  */
+     background-color: #E1B16A 
+    }
+
+  .common{
+    background-color: #343a40;
+  }
+  
+  .bg-dark { background-color: black;}
